@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="309.0" prefWidth="464.0" 
+xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FxmlController">
+   <children>
+      <Button fx:id="submit" layoutX="98.0" layoutY="169.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="74.0" text="执行" onAction="#sendButton"/>
+      <TextField fx:id="sendStr" layoutX="98.0" layoutY="85.0" promptText="请输入你要循环发送的话" />
+      <Button fx:id="fileControl" layoutX="210.0" layoutY="169.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="89.0" text="选择文件" onAction="#openFile"/>
+   </children>
+</Pane>
