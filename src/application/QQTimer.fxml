@@ -1,14 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
 <?import javafx.scene.control.*?>
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="309.0" prefWidth="464.0" 
-xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FxmlController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="309.0" prefWidth="464.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.FxmlController">
    <children>
-      <Button fx:id="submit" layoutX="98.0" layoutY="169.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="74.0" text="执行" onAction="#sendButton"/>
-      <TextField fx:id="sendStr" layoutX="98.0" layoutY="85.0" promptText="请输入你要循环发送的话" />
-      <Button fx:id="fileControl" layoutX="210.0" layoutY="169.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="89.0" text="选择文件" onAction="#openFile"/>
+      <Button fx:id="submit" layoutX="225.0" layoutY="169.0" mnemonicParsing="false" onAction="#sendButton" prefHeight="30.0" prefWidth="74.0" text="执行" />
+      <TextField fx:id="sendStr" layoutX="81.0" layoutY="85.0" prefHeight="40.0" prefWidth="221.0" promptText="请输入你要循环发送的话" />
+      <Button fx:id="fileControl" layoutX="335.0" layoutY="85.0" mnemonicParsing="false" onAction="#openFile" prefHeight="30.0" prefWidth="89.0" text="选择文件" />
+      <TextField fx:id="cishu" layoutX="134.0" layoutY="169.0" prefHeight="30.0" prefWidth="65.0" promptText="次数" text="10" />
+      <Label  layoutX="81.0" layoutY="169.0" prefHeight="30.0" prefWidth="53.0" text="次数：" />
+      <ImageView fitHeight="93.0" fitWidth="97.0" layoutX="345.0" layoutY="202.0" nodeOrientation="INHERIT" opacity="0.69" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/D:/TT/eclipse/QQTimer/src/application/util/20200425194848.png" />
+         </image>
+      </ImageView>
    </children>
 </Pane>

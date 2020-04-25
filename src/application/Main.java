@@ -14,7 +14,7 @@ public class Main extends Application {
 			Parent root = FXMLLoader.load(getClass().getResource("QQTimer.fxml"));// 修改了
 			// BorderPane root = new BorderPane();
 			// 设置Scene的大小(SceneBuilder中点击AnchorPane右边Layout中会显示大小,不一样的可以)
-			Scene scene = new Scene(root, 400, 300);// 修改了
+			Scene scene = new Scene(root, 470, 300);// 修改了
 			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 			primaryStage.setScene(scene);
 			primaryStage.setResizable(false);// 设置不能窗口改变大小
